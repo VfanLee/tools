@@ -1,6 +1,4 @@
 <script setup>
-import { ref, computed } from 'vue'
-
 const origiRradix = ref(10)
 const originVal = ref('')
 

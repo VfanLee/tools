@@ -1,6 +1,4 @@
 <script setup>
-import { ref, watch } from 'vue'
-
 const keyEvent = ref()
 const showKey = ref('')
 

@@ -21,7 +21,6 @@
 </template>
 
 <script setup>
-import { ref, nextTick } from 'vue'
 import videojs from 'video.js'
 import 'video.js/dist/video-js.css'
 

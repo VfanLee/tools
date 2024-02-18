@@ -1,6 +1,4 @@
 <script setup>
-import { ref, computed, watch } from 'vue'
-
 const HEXVal = ref('000000')
 watch(HEXVal, (val, oldVal) => {
   HEXVal.value = val.replace(/[^\da-f]/i, '')
