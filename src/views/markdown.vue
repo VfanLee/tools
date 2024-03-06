@@ -10,8 +10,7 @@ watch(inputText, (val, oldVal) => {
 </script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥markdown</h1>
+  <div class="view__content">
     <div class="markdown__container">
       <el-input class="markdown__input" v-model="inputText" type="textarea" />
       <div class="markdown__view" ref="markdownRef"></div>

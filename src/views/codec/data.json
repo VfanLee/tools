@@ -1,0 +1,36 @@
+{
+  "encode": [
+    {
+      "id": "encodeURI",
+      "title": "encodeURI",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI"
+    },
+    {
+      "id": "encodeURIComponent",
+      "title": "encodeURIComponent",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent"
+    },
+    {
+      "id": "escape",
+      "title": "escape ⚠️",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/escape"
+    }
+  ],
+  "decode": [
+    {
+      "id": "decodeURI",
+      "title": "decodeURI",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/decodeURI"
+    },
+    {
+      "id": "decodeURIComponent",
+      "title": "decodeURIComponent",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent"
+    },
+    {
+      "id": "unescape",
+      "title": "unescape ⚠️",
+      "moreUrl": "https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/unescape"
+    }
+  ]
+}

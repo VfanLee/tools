@@ -3,8 +3,7 @@ import cursors from '@/data/cursor.json'
 </script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥 CSS Cursor</h1>
+  <div class="view__content">
     <section v-for="(cursor, index) of cursors" :key="index">
       <h2>{{ cursor.title }}</h2>
       <div class="cursor__container">

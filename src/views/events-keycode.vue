@@ -15,9 +15,7 @@ document.addEventListener('keydown', function (e) {
 </script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥events-keycode</h1>
-
+  <div class="view__content">
     <template v-if="keyEvent">
       <div class="enter-keys">
         <div class="key__wrap" v-show="keyEvent.shiftKey">

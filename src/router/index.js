@@ -66,6 +66,13 @@ export const featureRoutes = {
       meta: {
         title: 'border-radius'
       }
+    },
+    {
+      path: 'codec',
+      component: () => import('@/views/codec/index.vue'),
+      meta: {
+        title: '编码器'
+      }
     }
   ]
 }

@@ -1,11 +1,7 @@
-<script setup>
-import mockjs from 'mockjs'
-</script>
+<script setup></script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥 Fake Data</h1>
-  </div>
+  <div class="view__content"></div>
 </template>
 
 <style lang="scss" scoped></style>

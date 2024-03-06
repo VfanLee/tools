@@ -15,9 +15,7 @@ const targetVal = computed(() => {
 </script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥进制转换</h1>
-
+  <div class="view__content">
     <div class="origin__container">
       <h2>待转换数字</h2>
       <el-input-number v-model="origiRradix" :min="2" :max="36" />

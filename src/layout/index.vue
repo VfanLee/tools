@@ -1,19 +1,24 @@
 <script setup>
 import GlobalButton from '@/components/GlobalButton.vue'
-import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="app__contaienr">
-    <RouterView />
+    <div class="view__container">
+      <h1 class="view__title">🔥 {{ $route.meta.title }}</h1>
+      <RouterView />
+    </div>
 
     <GlobalButton />
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .app__contaienr {
-  padding: 20px;
   min-height: 100vh;
+}
+
+.view__container {
+  padding: 20px;
 }
 </style>

@@ -5,18 +5,9 @@ watch(HEXVal, (val, oldVal) => {
 })
 const transferRGB = computed(() => {
   if (/^([0-9a-f]{3})$/gi.test(HEXVal.value)) {
-    const red = Number.parseInt(
-      HEXVal.value.slice(0, 1) + HEXVal.value.slice(0, 1),
-      16
-    )
-    const green = Number.parseInt(
-      HEXVal.value.slice(1, 2) + HEXVal.value.slice(1, 2),
-      16
-    )
-    const blue = Number.parseInt(
-      HEXVal.value.slice(2, 3) + HEXVal.value.slice(2, 3),
-      16
-    )
+    const red = Number.parseInt(HEXVal.value.slice(0, 1) + HEXVal.value.slice(0, 1), 16)
+    const green = Number.parseInt(HEXVal.value.slice(1, 2) + HEXVal.value.slice(1, 2), 16)
+    const blue = Number.parseInt(HEXVal.value.slice(2, 3) + HEXVal.value.slice(2, 3), 16)
     return `rgb(${red}, ${green}, ${blue})`
   }
 
@@ -38,14 +29,7 @@ const transferHEX = computed(() => {
   const arr = RGBVal.value.split(',')
 
   if (arr.length === 3) {
-    if (
-      arr[0] >= 0 &&
-      arr[0] <= 255 &&
-      arr[1] >= 0 &&
-      arr[1] <= 255 &&
-      arr[2] >= 0 &&
-      arr[2] <= 255
-    ) {
+    if (arr[0] >= 0 && arr[0] <= 255 && arr[1] >= 0 && arr[1] <= 255 && arr[2] >= 0 && arr[2] <= 255) {
       let red = Number(arr[0]).toString(16)
       if (red.length < 2) {
         red = '0' + red
@@ -67,17 +51,10 @@ const transferHEX = computed(() => {
 </script>
 
 <template>
-  <div class="view__container">
-    <h1>🔥HEX/RGB互转</h1>
-
+  <div class="view__content">
     <h2>HEX 转 RGB</h2>
     <div class="HEX__container">
-      <el-input
-        type="text"
-        v-model="HEXVal"
-        placeholder="请输入十六进制颜色值"
-        clearable
-      >
+      <el-input type="text" v-model="HEXVal" placeholder="请输入十六进制颜色值" clearable>
         <template #prefix>#</template>
       </el-input>
 
