@@ -5,7 +5,7 @@ import GlobalButton from '@/components/GlobalButton.vue'
 <template>
   <div class="app__contaienr">
     <div class="view__container">
-      <h1 class="view__title">🔥 {{ $route.meta.title }}</h1>
+      <h1 class="view__title">{{ $route.meta.title }}</h1>
       <RouterView />
     </div>
 
@@ -14,10 +14,6 @@ import GlobalButton from '@/components/GlobalButton.vue'
 </template>
 
 <style lang="scss">
-.app__contaienr {
-  min-height: 100vh;
-}
-
 .view__container {
   padding: 20px;
 }

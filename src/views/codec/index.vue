@@ -36,16 +36,16 @@ const learnMore = () => {
 
 <template>
   <div class="view__content">
-    <el-form :inline="true">
+    <el-form inline>
       <el-form-item label="编码器模式">
         <el-select v-model="codecMode" @change="initData" style="width: 80px">
-          <el-option :value="true" label="编码"></el-option>
-          <el-option :value="false" label="解码"></el-option>
+          <el-option :value="true" label="编码" />
+          <el-option :value="false" label="解码" />
         </el-select>
       </el-form-item>
       <el-form-item label="编码器函数">
         <el-select v-model="selectedFunc" value-key="id" placeholder="请选择编码器函数" style="width: 200px">
-          <el-option v-for="cf in codeFuncs" :key="cf.id" :value="cf" :label="cf.title"></el-option>
+          <el-option v-for="cf in codeFuncs" :key="cf.id" :value="cf" :label="cf.title" />
         </el-select>
       </el-form-item>
       <el-form-item>

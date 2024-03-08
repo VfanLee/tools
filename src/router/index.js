@@ -8,70 +8,70 @@ export const featureRoutes = {
       path: 'm3u8-player',
       component: () => import('@/views/m3u8-player.vue'),
       meta: {
-        title: 'm3u8 在线播放'
+        title: '🔥 m3u8 在线播放器'
       }
     },
     {
       path: 'radix',
       component: () => import('@/views/radix.vue'),
       meta: {
-        title: '进制转换'
+        title: '🔥 进制转换'
       }
     },
     {
       path: 'color',
-      component: () => import('@/views/color.vue'),
+      component: () => import('@/views/color/index.vue'),
       meta: {
-        title: 'HEX/RGB互转'
+        title: '🔥 颜色工具集'
       }
     },
     {
       path: 'markdown',
       component: () => import('@/views/markdown.vue'),
       meta: {
-        title: 'markdown'
+        title: '🔥 markdown'
       }
     },
     {
       path: 'events-keycode',
       component: () => import('@/views/events-keycode.vue'),
       meta: {
-        title: 'events-keycode'
+        title: '🔥 events-keycode'
       }
     },
     {
       path: 'cursor',
       component: () => import('@/views/cursor.vue'),
       meta: {
-        title: 'cursor'
+        title: '🔥 cursor'
       }
     },
     {
       path: 'fake-data',
       component: () => import('@/views/fake-data.vue'),
       meta: {
-        title: 'fake-data'
+        title: '🔥 fake-data'
       }
     },
     {
       path: 'box-shadow',
       component: () => import('@/views/box-shadow.vue'),
       meta: {
-        title: 'box-shadow'
+        title: '🔥 box-shadow'
       }
     },
     {
       path: 'border-radius',
       component: () => import('@/views/border-radius.vue'),
       meta: {
-        title: 'border-radius'
+        title: '🔥 border-radius'
       }
     },
     {
       path: 'codec',
       component: () => import('@/views/codec/index.vue'),
       meta: {
-        title: '编码器'
+        title: '🔥 编码器'
       }
     }
   ]
@@ -80,7 +80,7 @@ export const featureRoutes = {
 export const routes = [
   {
     path: '/',
-    component: () => import('@/views/index.vue'),
+    component: () => import('@/views/index/index.vue'),
     meta: {
       title: "Vfan Lee's Tools"
     }
